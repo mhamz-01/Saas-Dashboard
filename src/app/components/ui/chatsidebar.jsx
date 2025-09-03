@@ -2,12 +2,11 @@
 import Image from "next/image";
 
 export default function ChatSidebar() {
-  // Dummy employees (replace with real data later)
   const employees = [
-    { id: 1, name: "Alice", img: "/emp1.jpg" },
-    { id: 2, name: "Bob", img: "/emp2.jpg" },
-    { id: 3, name: "Charlie", img: "/emp3.jpg" },
-    { id: 4, name: "Dana", img: "/emp4.jpg" },
+    { id: 1, name: "Alice", img: "https://i.pravatar.cc/48?img=1" },
+    { id: 2, name: "Bob", img: "https://i.pravatar.cc/48?img=2" },
+    { id: 3, name: "Charlie", img: "https://i.pravatar.cc/48?img=3" },
+    { id: 4, name: "Dana", img: "https://i.pravatar.cc/48?img=4" },
   ];
 
   return (
