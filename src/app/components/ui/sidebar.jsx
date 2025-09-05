@@ -7,6 +7,7 @@ import { MdDashboard,MdOutlineUpcoming } from "react-icons/md";
 import NavItem from "./buttons/dashboardButton";
 import { supabase } from "../../../../lib/supabaseClient";
 import { MdMeetingRoom } from "react-icons/md";
+import { GrProjects } from "react-icons/gr";
 
 export default function Sidebar() {
   const [canUploadTask, setCanUploadTask] = useState(false);
@@ -39,6 +40,8 @@ export default function Sidebar() {
     { href: "/chats", icon: FaRocketchat, label: "Chats" },
     { href: "/tasks", icon: FaTasks, label: "Tasks" },
     { href: "/upcomingmeetings", icon: MdOutlineUpcoming, label: "Upcoming Meetings" },
+    { href: "/activeprojects", icon: GrProjects, label: "Active Projects" },
+
     {
       href: canUploadTask ? "/taskupload" : "/error",
       icon: AiOutlineSchedule,
